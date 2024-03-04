@@ -25,7 +25,6 @@ inputRef.addEventListener("input", (e) => {
     clearBtn.disabled = false;
   }
   const filteredData = filterById(galleryItems, inputValInv);
-
   if (filteredData.length === 0) {
     listGallery.insertAdjacentHTML(
       "beforeend",
@@ -46,7 +45,7 @@ inputRef.addEventListener("input", (e) => {
 
 function createGalleryItemsMarkup(galleryItems) {
   return galleryItems
-    .map(({ original, preview, name, date, icon }) => {
+    .map(({ original, preview, name, date, icon, id }) => {
       return `<li class="item-card">
               <div class="gallery__item link" href="${original}">
                 <img src="${preview}" alt="${name}" width="360" height="460" class="preview"/>
@@ -54,6 +53,7 @@ function createGalleryItemsMarkup(galleryItems) {
                 <div class="card-content">
                 <p class="type-of-card"><span class="card-text">Имя: </span>${name}<span class="animal-icon"><i class="fa-solid fa-${icon}"></i></span></p>
                 <p class="card-name"><span class="card-text">Дата: </span>${date}</p>
+                <p class="card-name"><span class="card-text">ID: </span>${id}</p>
                 </div>
                 </li>`;
     })

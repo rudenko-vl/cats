@@ -8,15 +8,20 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1e1d39;
   color: #212121;
   line-height: 1.5;
+  background-image: url(https://images.unsplash.com/photo-1589306994259-a806e14b775a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 50px 15px;
+  margin-top: 120px;
 }
 
 .wrap {
@@ -62,9 +67,12 @@ img {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   background-color: rgb(0, 0, 0);
   padding: 20px;
   color: white;
+  box-shadow: 2px 2px 14px 0px #fff;
 }
 
 /* .header-nav {
@@ -85,7 +93,7 @@ img {
 
 @media screen and (min-width: 720px) {
   .header {
-    padding: 20px 50px;
+    padding: 30px 50px;
   }
 }
 
@@ -107,15 +115,19 @@ img {
 .nav-item i:nth-child(1) {
   margin-right: 15px;
 }
+
 .nav-item i:nth-child(3) {
   margin-left: 15px;
 }
+
 .nav-item i:nth-child(4) {
   font-size: 8px;
 }
+
 .nav-item i:nth-child(5) {
   font-size: 8px;
 }
+
 .nav-item i:nth-child(6) {
   font-size: 8px;
 }
@@ -214,6 +226,7 @@ img {
   border-radius: 8px;
   /* overflow: hidden; */
 }
+
 .item-card img {
   border-radius: 8px;
 }
@@ -227,6 +240,8 @@ img {
 .card-content {
   padding: 20px 24px;
   border-top: none;
+  background: black;
+  border-radius: 8px;
 }
 
 .card-name {
@@ -235,7 +250,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  color: rgb(255, 255, 255);
+  color: yellow;
 }
 
 @media screen and (min-width: 420px) {
@@ -269,7 +284,7 @@ img {
 .card-text {
   font-size: 14px;
   font-weight: 700;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 420px) {
@@ -429,6 +444,7 @@ img {
   color: #ffffff;
   margin-top: 100px;
 }
+
 .default_text img {
   max-width: 300px;
   max-height: 400px;
