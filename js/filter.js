@@ -1,9 +1,50 @@
 import { galleryItems } from "./gallery-items.js";
 
+// let galleryItems = []
+// const pageBtn = document.getElementById('page');
+// const limitBtn = document.getElementById('limit');
+
+
+// let page = 1;
+// let limit = 10;
+
+// limitBtn.onclick = () => {
+//   limit += 10;
+//   getData()
+//   console.log(galleryItems.length, 'arr');
+// }
+
+// pageBtn.onclick = () => {
+//   page += 1;
+//   getData()
+//   console.log(galleryItems, 'arr');
+// }
+
+// const getData = () => {
+//   const url = new URL(`https://6421563734d6cd4ebd707db9.mockapi.io/todos?page=${page}&limit=${limit}`);
+//   fetch(url, {
+//     method: 'GET',
+//     headers: { 'content-type': 'application/json' },
+//   }).then(res => {
+//     if (res.ok) {
+//       return res.json();
+//     }
+//   }).then(data => {
+//     galleryItems = data
+//   }).catch(error => {
+//     console.log(error);
+//   })
+// }
+// getData()
+
+// =========================
+
 const listGallery = document.querySelector("ul.gallery");
 const search = document.querySelector(".search");
 const icon = document.querySelector(".icon");
 const inputRef = document.getElementById("filterInput");
+const clearBtn = document.querySelector(".clear-btn");
+clearBtn.disabled = true;
 
 icon.addEventListener("click", () => {
   search.classList.toggle("active");
@@ -18,18 +59,24 @@ export function filterById(arr, word) {
   return filteredData;
 }
 
+clearBtn.addEventListener("click", () => {
+  location.reload()
+});
+
 inputRef.addEventListener("input", (e) => {
   listGallery.innerHTML = "";
   const inputValInv = e.target.value;
   if (inputValInv) {
     clearBtn.disabled = false;
+  } else {
+    clearBtn.disabled = true;
   }
   const filteredData = filterById(galleryItems, inputValInv);
   if (filteredData.length === 0) {
     listGallery.insertAdjacentHTML(
       "beforeend",
       `<li class="default_text">Ничего не найдено 🤷‍♂️ Попробуйте еще!
-      <img src="../img/funny_cat.jpg" alt="cat"/>
+      <img src="./img/funny_cat.jpg" alt="cat"/>
       </li>`
     );
   }
@@ -53,7 +100,6 @@ function createGalleryItemsMarkup(galleryItems) {
                 <div class="card-content">
                 <p class="type-of-card"><span class="card-text">Имя: </span>${name}<span class="animal-icon"><i class="fa-solid fa-${icon}"></i></span></p>
                 <p class="card-name"><span class="card-text">Дата: </span>${date}</p>
-                <p class="card-name"><span class="card-text">ID: </span>${id}</p>
                 </div>
                 </li>`;
     })
@@ -68,10 +114,4 @@ listGallery.insertAdjacentHTML(
 let gallery = new SimpleLightbox(".gallery__item", {
   captionsData: "alt",
   captionDelay: 250,
-});
-
-const clearBtn = document.querySelector(".clear-btn");
-clearBtn.disabled = true;
-clearBtn.addEventListener("click", () => {
-  location.reload();
 });
