@@ -107,7 +107,7 @@ export const galleryItems = [
     "id": "17",
     "preview": "https://i.ibb.co/BcRy1Ny/IMG-20140825-114415.jpg",
     "original": "https://i.ibb.co/BcRy1Ny/IMG-20140825-114415.jpg",
-    "name": "Рыжик",
+    "name": "Персик",
     "date": "25 августа 2014г.",
     "icon": "cat"
   },
@@ -171,7 +171,7 @@ export const galleryItems = [
     "id": "25",
     "preview": "https://i.ibb.co/PtD6t60/IMG-20160503-165655.jpg",
     "original": "https://i.ibb.co/PtD6t60/IMG-20160503-165655.jpg",
-    "name": "Рыжик",
+    "name": "Персик",
     "date": "3 мая 2016г.",
     "icon": "cat"
   },
@@ -179,7 +179,7 @@ export const galleryItems = [
     "id": "26",
     "preview": "https://i.ibb.co/zR9RJmr/IMG-20160503-165920.jpg",
     "original": "https://i.ibb.co/zR9RJmr/IMG-20160503-165920.jpg",
-    "name": "Рыжик",
+    "name": "Персик",
     "date": "3 мая 2016г.",
     "icon": "cat"
   },
@@ -195,7 +195,7 @@ export const galleryItems = [
     "id": "28",
     "preview": "https://i.ibb.co/LCcb0Zc/IMG-20160503-170134.jpg",
     "original": "https://i.ibb.co/LCcb0Zc/IMG-20160503-170134.jpg",
-    "name": "Рыжик",
+    "name": "Персик",
     "date": "3 мая 2016г.",
     "icon": "cat"
   },
@@ -203,7 +203,7 @@ export const galleryItems = [
     "id": "29",
     "preview": "https://i.ibb.co/4PCz8JQ/IMG-20160503-183519.jpg",
     "original": "https://i.ibb.co/4PCz8JQ/IMG-20160503-183519.jpg",
-    "name": "Рыжик",
+    "name": "Персик",
     "date": "3 мая 2016г.",
     "icon": "cat"
   },
@@ -604,7 +604,7 @@ export const galleryItems = [
     "preview": "https://i.ibb.co/wCbhLdf/IMG-c7151dce8226ddec9572d5945f82e06f-V.jpg",
     "original": "https://i.ibb.co/wCbhLdf/IMG-c7151dce8226ddec9572d5945f82e06f-V.jpg",
     "name": "Дымок и Малышка",
-    "date": "9 мая 2011г.",
+    "date": "9 мая 2021г.",
     "icon": "cat"
   },
   {
