@@ -798,5 +798,21 @@ export const galleryItems = [
     "name": "Дымок",
     "date": "21 июня 2021г.",
     "icon": "cat"
+  },
+  {
+    "id": "101",
+    "preview": "https://i.ibb.co/0V8vCrH/viber-2024-03-06-09-04-23-392.jpg",
+    "original": "https://i.ibb.co/0V8vCrH/viber-2024-03-06-09-04-23-392.jpg",
+    "name": "Барни",
+    "date": "зима 2024г.",
+    "icon": "dog"
+  },
+  {
+    "id": "102",
+    "preview": "https://i.ibb.co/3pkMd8n/viber-2024-03-06-09-04-23-611.jpg",
+    "original": "https://i.ibb.co/3pkMd8n/viber-2024-03-06-09-04-23-611.jpg",
+    "name": "Барни",
+    "date": "зима 2024г.",
+    "icon": "dog"
   }
 ];
